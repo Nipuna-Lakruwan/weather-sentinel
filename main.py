@@ -41,7 +41,7 @@ def check_weather():
 
         # --- MODIFIED FOR TESTING ---
         # We removed the 'if total_precip > 0.5' check
-        msg = f"🔔 TEST ALERT: The bot is working! Rain in ${city}: {total_precip}mm."
+        msg = f"🔔 TEST ALERT: The bot is working! Rain in {city}: {total_precip}mm."
         send_telegram_alert(msg)
         print("Test alert sent!")
 
