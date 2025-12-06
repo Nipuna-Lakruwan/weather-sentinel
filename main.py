@@ -3,6 +3,7 @@ import os
 
 # --- CONFIGURATION ---
 # Colombo/Kandana Coordinates
+city = "Kandana"
 LAT = 7.048 
 LON = 79.894
 # Telegram Creds (We will load these from Environment Variables for security)
@@ -40,7 +41,7 @@ def check_weather():
 
         # --- MODIFIED FOR TESTING ---
         # We removed the 'if total_precip > 0.5' check
-        msg = f"🔔 TEST ALERT: The bot is working! Rain in Ja-Ela: {total_precip}mm."
+        msg = f"🔔 TEST ALERT: The bot is working! Rain in ${city}: {total_precip}mm."
         send_telegram_alert(msg)
         print("Test alert sent!")
 
