@@ -2,8 +2,8 @@ name: Weather Sentinel
 
 on:
   schedule:
-    # Runs every 4 hours
-    - cron: '0 */4 * * *'
+    # Runs every 2 hours
+    - cron: '0 */2 * * *'
   workflow_dispatch: # Allows you to click "Run Now" manually to test
 
 jobs:

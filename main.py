@@ -33,7 +33,7 @@ def check_weather():
         
         # LOGIC: If rain is greater than 0.5mm, send alert
         # if total_precip > 0.5:
-        #     msg = f"⚠️ WEATHER ALERT: Rain detected in Ja-Ela/Colombo area! ({total_precip}mm). Check construction sites and campus updates."
+        #     msg = f"⚠️ WEATHER ALERT: Rain detected in Kandana area! ({total_precip}mm). Check construction sites and campus updates."
         #     send_telegram_alert(msg)
         #     print("Alert sent!")
         # else:
