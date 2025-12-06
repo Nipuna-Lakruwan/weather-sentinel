@@ -31,12 +31,18 @@ def check_weather():
         print(f"Current Precipitation: {total_precip} mm")
         
         # LOGIC: If rain is greater than 0.5mm, send alert
-        if total_precip > 0.5:
-            msg = f"⚠️ WEATHER ALERT: Rain detected in Ja-Ela/Colombo area! ({total_precip}mm). Check construction sites and campus updates."
-            send_telegram_alert(msg)
-            print("Alert sent!")
-        else:
-            print("Weather looks clear. No alert needed.")
+        # if total_precip > 0.5:
+        #     msg = f"⚠️ WEATHER ALERT: Rain detected in Ja-Ela/Colombo area! ({total_precip}mm). Check construction sites and campus updates."
+        #     send_telegram_alert(msg)
+        #     print("Alert sent!")
+        # else:
+        #     print("Weather looks clear. No alert needed.")
+
+        # --- MODIFIED FOR TESTING ---
+        # We removed the 'if total_precip > 0.5' check
+        msg = f"🔔 TEST ALERT: The bot is working! Rain in Ja-Ela: {total_precip}mm."
+        send_telegram_alert(msg)
+        print("Test alert sent!")
 
     except Exception as e:
         print(f"Error: {e}")
