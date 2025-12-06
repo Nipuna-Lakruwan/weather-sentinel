@@ -1,0 +1,26 @@
+name: Weather Sentinel
+
+on:
+  schedule:
+    # Runs every 4 hours
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Allows you to click "Run Now" manually to test
+
+jobs:
+  check_weather:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Build and Run Docker Container
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+        run: |
+          docker build -t weather-bot .
+          docker run -e BOT_TOKEN="$BOT_TOKEN" -e CHAT_ID="$CHAT_ID" weather-bot
