@@ -24,6 +24,13 @@ I needed a solution that was **proactive**, not reactive. Inspired by the open-s
 
 ---
 
+## 🚀 Demo
+Here is the Weather Sentinel in action. It triggers a workflow manually and instantly notifies my Telegram bot.
+
+![Weather Sentinel Demo](assets/weather-sentinel-demo.gif)
+
+---
+
 ## 🛠️ Architecture & Tech Stack
 
 This project bridges the gap between **Software Development** and **DevOps Engineering**.
