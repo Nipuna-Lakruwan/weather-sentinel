@@ -2,9 +2,9 @@ import requests
 import os
 
 # --- CONFIGURATION ---
-# Colombo/Ja-Ela Coordinates
-LAT = 7.08  
-LON = 79.89
+# Colombo/Kandana Coordinates
+LAT = 7.048 
+LON = 79.894
 # Telegram Creds (We will load these from Environment Variables for security)
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
